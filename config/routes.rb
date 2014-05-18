@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  
   resources :spaces
 
-
-
   root 'spaces#index'
+  match '/list', to: 'spaces#list', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

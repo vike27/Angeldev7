@@ -66,6 +66,15 @@ class SpacesController < ApplicationController
     end
   end
 
+  def list
+    @spaces = Space.all
+    @hash = Gmaps4rails.build_markers(@spaces) do |space, marker|
+    marker.lat space.latitude
+    marker.lng space.longitude
+    marker.infowindow space.name
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_space
