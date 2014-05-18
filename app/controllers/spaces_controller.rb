@@ -9,6 +9,10 @@ class SpacesController < ApplicationController
     marker.lat space.latitude
     marker.lng space.longitude
     marker.infowindow space.name
+    marker.picture({
+    "url" => "http://www.blankspaces.com/wp-content/themes/blankspaces/images/blankspace.png",  
+    "width" => 32,
+    "height" => 32})
     end
   end
 
@@ -72,6 +76,10 @@ class SpacesController < ApplicationController
     marker.lat space.latitude
     marker.lng space.longitude
     marker.infowindow space.name
+        marker.picture({
+    "url" => "http://www.blankspaces.com/wp-content/themes/blankspaces/images/blankspace.png",  
+    "width" => 32,
+    "height" => 32})
     end
   end
 
