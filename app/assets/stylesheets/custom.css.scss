@@ -328,10 +328,37 @@
 	padding-top: 75px;
 }
 
-/*---- list page ----*/
+#map {
+	border: 5px solid #090909;
+}
+
+/*------------------------ list page -------------------------*/
+
+/*----- map part ----*/
 
 table, th, td
 {
-border: 20px solid white;
+border: 25px solid white;
+}
+
+#mapstuff {
+	border: 5px solid #090909;
+}
+
+.surroundmap {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 115px;
+	padding-bottom: 75px;
+}
+
+/*----- list part ----*/
+
+.listings {
+	margin-left: 100px;
+	margin-right: 100px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
 }
 
